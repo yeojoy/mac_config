@@ -14,8 +14,8 @@
 $
 
 # Command Line History (newest to oldest):
-:wq
 :q
+:wq
 :e AndroidManifest.xml
 :vs
 :e
@@ -76,18 +76,20 @@ $
 	화
 
 # File marks:
-'0  27  6  ~/.gitignore
-'1  36  0  ~/.gitignore
-'2  1  0  ~/.git
-'3  1  0  ~/workspace/android/PartTimeApp/.project
-'4  1  0  ~/tmp/jayway-maven-android-plugin-samples-5c45120/helloflashlight/local.properties
-'5  1  0  ~/tmp/jayway-maven-android-plugin-samples-5c45120/helloflashlight/pom.xml
-'6  1  0  ~/tmp/jayway-maven-android-plugin-samples-5c45120/helloflashlight/build.xml
-'7  38  11  ~/workspace/android/PartTimeApp/AndroidManifest.xml
-'8  2  35  ~/workspace/android/PartTimeApp/README
-'9  4  5  ~/workspace/android/PartTimeApp/.gitignore
+'0  118  0  ~/.bash_profile
+'1  27  6  ~/.gitignore
+'2  36  0  ~/.gitignore
+'3  1  0  ~/.git
+'4  1  0  ~/workspace/android/PartTimeApp/.project
+'5  1  0  ~/tmp/jayway-maven-android-plugin-samples-5c45120/helloflashlight/local.properties
+'6  1  0  ~/tmp/jayway-maven-android-plugin-samples-5c45120/helloflashlight/pom.xml
+'7  1  0  ~/tmp/jayway-maven-android-plugin-samples-5c45120/helloflashlight/build.xml
+'8  38  11  ~/workspace/android/PartTimeApp/AndroidManifest.xml
+'9  2  35  ~/workspace/android/PartTimeApp/README
 
 # Jumplist (newest first):
+-'  118  0  ~/.bash_profile
+-'  1  0  ~/.bash_profile
 -'  27  6  ~/.gitignore
 -'  1  0  ~/.gitignore
 -'  36  0  ~/.gitignore
@@ -132,10 +134,8 @@ $
 -'  1  0  /opt/tmux/bin/tmux
 -'  1  0  ~/tmu
 -'  116  25  ~/.bash_profile
--'  118  13  ~/.bash_profile
 -'  59  14  ~/.bash_profile
 -'  56  13  ~/.bash_profile
--'  1  0  ~/.bash_profile
 -'  12  33  ~/tmp/Test/Test.jav
 -'  13  0  ~/tmp/Test/Test.jav
 -'  8  0  ~/tmp/Test/Test.jav
@@ -186,9 +186,15 @@ $
 -'  4  4  ~/workspace/node.js/simple_web_market/web/main.html
 -'  1  0  ~/workspace/node.js/simple_web_market/web/main.html
 -'  1  25  ~/workspace/Java/.metadata/version.ini
--'  1  0  ~/workspace/android/ExceptionTest/src/ExceptionTest
 
 # History of marks within files (newest to oldest):
+
+> ~/.bash_profile
+	"	118	0
+	^	116	26
+	.	116	25
+	+	118	225
+	+	116	25
 
 > ~/.gitignore
 	"	27	6
@@ -326,13 +332,6 @@ $
 
 > ~/tmu
 	"	1	0
-
-> ~/.bash_profile
-	"	116	25
-	^	116	26
-	.	116	25
-	+	118	225
-	+	116	25
 
 > ~/tmp/Test/Test.jav
 	"	12	33
