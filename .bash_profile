@@ -115,4 +115,6 @@ export DART_HOME=/opt/dart-sdk
 export DEV_HOME=${HOME}/DevTool
 export TMUX_HOME=/opt/tmux
 
-export PATH=${PATH}:usr/local/bin:/usr/local/sbin:/usr/local/share/python:$HOME/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/build-tools/17.0.0:${DART_HOME}/bin:${DEV_HOME}/eclipse:${TMUX_HOME}/bin
+export PATH=${PATH}:usr/local/bin:/usr/local/sbin:/usr/local/share/python
+export PATH=${PATH}:$HOME/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/build-tools/18.1.0
+export PATH=${PATH}:${DART_HOME}/bin:${DEV_HOME}/eclipse:${TMUX_HOME}/bin
