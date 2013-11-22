@@ -109,12 +109,12 @@ export LSCOLORS=FxGxCxDxBxegedabagaced
 # export PS1='\[\033[01;32m\]\u:\[\033[01;35m\]\w\[\033[00m\]\$ '
 # export TERM=xterm-256color
 
-export JAVA_HOME=$(/usr/libexec/java_home)
-export ANDROID_HOME=/opt/android-sdk-macosx
-export DART_HOME=/opt/dart-sdk
 export DEV_HOME=${HOME}/DevTool
+export JAVA_HOME=$(/usr/libexec/java_home)
+export ANDROID_HOME=${DEV_HOME}/android-sdk-macosx
+export DART_HOME=${DEV_HOME}dart-sdk
 export TMUX_HOME=/opt/tmux
 
 export PATH=${PATH}:usr/local/bin:/usr/local/sbin:/usr/local/share/python
-export PATH=${PATH}:$HOME/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/build-tools/18.1.0
+export PATH=${PATH}:$HOME/sh:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/build-tools/18.1.0
 export PATH=${PATH}:${DART_HOME}/bin:${DEV_HOME}/eclipse:${TMUX_HOME}/bin
