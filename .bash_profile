@@ -115,6 +115,6 @@ export ANDROID_HOME=${DEV_HOME}/android-sdk-macosx
 export DART_HOME=${DEV_HOME}dart-sdk
 export TMUX_HOME=/opt/tmux
 
-export PATH=${PATH}:usr/local/bin:/usr/local/sbin:/usr/local/share/python
+export PATH=${PATH}:/usr/local/bin:/usr/local/sbin:/usr/local/share/python
 export PATH=${PATH}:$HOME/sh:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/build-tools/18.1.0
 export PATH=${PATH}:${DART_HOME}/bin:${DEV_HOME}/eclipse:${TMUX_HOME}/bin
