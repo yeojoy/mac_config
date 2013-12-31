@@ -41,6 +41,12 @@ branch_color ()
    echo -ne $color
 }
 
+function java_use() {
+    export JAVA_HOME=$(/usr/libexec/java_home -v $1)
+    export PATH=$JAVA_HOME/bin:$PATH
+    java -version
+}
+
 export PS1='@\[\e[1;32m\]\u\[\e[0m\]\[${c_sgr0}\]:\w\[${c_sgr0}\]\[$(parse_branch)\]\[\e[0m\]> '
 
 ###### General 
@@ -92,6 +98,7 @@ alias ls='ls -G'
 alias grep='grep --color=auto'
 alias subl='open /Applications/Sublime\ Text\ 2.app'
 alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias java_ls='/usr/libexec/java_home -V 2>&1 | grep -E "\d.\d.\d_\d\d" | cut -d , -f 1 | colrm 1 4 | grep -v Home'
 
 alias ..1='cd ..'
 alias ..2='cd ../..'
