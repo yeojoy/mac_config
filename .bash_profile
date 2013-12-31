@@ -1,6 +1,9 @@
 ###### .bash_profile
 ###### @author  A.J <andrwj@gmail.com>
 
+###### about java_use > http://superuser.com/users/201460/alex
+###### refs : http://superuser.com/questions/490425/how-do-i-switch-between-java-7-and-java-6-on-os-x-10-8-2
+
 ###### display 'git status' in bash prompt line (PS1)
 c_cyan=`tput setaf 6`
 c_dark=`tput setaf 0`
