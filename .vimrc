@@ -21,7 +21,7 @@ set autoindent
 "set magic
 set title
 "set linespace=100
-"set paste
+set paste
 
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType c      set omnifunc=ccomplete#Complete
