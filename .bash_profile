@@ -44,6 +44,9 @@ branch_color ()
    echo -ne $color
 }
 
+# HOW TO USE
+# change to java 1.6
+# $ java_use 1.6
 function java_use() {
     export JAVA_HOME=$(/usr/libexec/java_home -v $1)
     export PATH=$JAVA_HOME/bin:$PATH
@@ -99,8 +102,7 @@ set -o vi
 ##########  
 alias ls='ls -G'
 alias grep='grep --color=auto'
-alias subl='open /Applications/Sublime\ Text\ 2.app'
-#alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias subl='open /Applications/Sublime\ Text\ 3.app'
 alias gl='git log --pretty=format:'\''%Cgreen(%ci) %Cred%h%Creset %C(bold blue)<%an>%Creset %s -%C(yellow)%d%Creset'\''  --abbrev-commit --graph'
 alias java_ls='/usr/libexec/java_home -V 2>&1 | grep -E "\d.\d.\d_\d\d" | cut -d , -f 1 | colrm 1 4 | grep -v Home'
 
@@ -110,15 +112,11 @@ alias ..3='cd ../../..'
 alias ..4='cd ../../../..'
 alias ..5='cd ../../../../..'
 
+# go to nginx conf
 alias n_conf='cd /usr/local/etc/nginx'
 
 export CLICOLOR=1
-#export LSCOLORS=exfxcxdxbxegedabagacad
 export LSCOLORS=FxGxCxDxBxegedabagaced
-
-# export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;35m\]\w\[\033[00m\]\$ '
-# export PS1='\[\033[01;32m\]\u:\[\033[01;35m\]\w\[\033[00m\]\$ '
-# export TERM=xterm-256color
 
 export DEV_HOME=${HOME}/devTool
 export JAVA_HOME=$(/usr/libexec/java_home)
@@ -127,4 +125,4 @@ export DART_HOME=${DEV_HOME}/dart-sdk
 
 export PATH=${PATH}:/usr/local/bin:/usr/local/sbin:/usr/local/share/python
 export PATH=${PATH}:$HOME/sh:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/build-tools/20.0.0
-export PATH=${PATH}:${DART_HOME}/bin:${DEV_HOME}/eclipse:${TMUX_HOME}/bin
+export PATH=${PATH}:${DART_HOME}/bin:${DEV_HOME}/eclipse
