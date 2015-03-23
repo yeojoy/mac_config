@@ -45,10 +45,11 @@ branch_color ()
 }
 
 # HOW TO USE
-# change to java 1.6
-# $ java_use 1.6
+# change to java jdk6, 7, or 8
+# example
+# $ java_use 6
 function java_use() {
-    export JAVA_HOME=$(/usr/libexec/java_home -v $1)
+    export JAVA_HOME=$(/usr/libexec/java_home -v 1.$1)
     export PATH=$JAVA_HOME/bin:$PATH
     java -version
 }
