@@ -125,5 +125,6 @@ export ANDROID_HOME=${DEV_HOME}/android-sdk-macosx
 export DART_HOME=${DEV_HOME}/dart-sdk
 
 export PATH=${PATH}:/usr/local/bin:/usr/local/sbin:/usr/local/share/python
-export PATH=${PATH}:$HOME/sh:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/build-tools/20.0.0
-export PATH=${PATH}:${DART_HOME}/bin:${DEV_HOME}/eclipse
+export PATH=${PATH}:${HOME}/bin
+export PATH=${PATH}:$HOME/sh:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
+export PATH=${PATH}:${DART_HOME}/bin
