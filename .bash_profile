@@ -119,12 +119,11 @@ alias n_conf='cd /usr/local/etc/nginx'
 export CLICOLOR=1
 export LSCOLORS=FxGxCxDxBxegedabagaced
 
-export DEV_HOME=${HOME}/devTool
 export JAVA_HOME=$(/usr/libexec/java_home)
-export ANDROID_HOME=${DEV_HOME}/android-sdk-macosx
-export DART_HOME=${DEV_HOME}/dart-sdk
+export ANDROID_HOME=${HOME}/Library/Android/sdk
+export NDK_HOME=/usr/local/Cellar/android-ndk/r10e
+export DRACULA_HOME=${HOME}/tmp/xcode
 
 export PATH=${PATH}:/usr/local/bin:/usr/local/sbin:/usr/local/share/python
 export PATH=${PATH}:${HOME}/bin
 export PATH=${PATH}:$HOME/sh:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
-export PATH=${PATH}:${DART_HOME}/bin
