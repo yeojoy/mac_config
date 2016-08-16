@@ -35,7 +35,7 @@ branch_color ()
    then
       gitstatus=$(git status 2>/dev/null| tail -n1)
       case "$gitstatus" in
-         "nothing to commit, working directory clean" ) color=${c_green};;
+         "nothing to commit, working tree clean" ) color=${c_green};;
          * ) color=${c_pink};;
       esac
    else
