@@ -101,12 +101,16 @@ set -o vi
 ##########  
 # alias
 ##########  
-alias ls='ls -G'
+# alias ls='ls -G'
+alias ll='ls -alt'
 alias grep='grep --color=auto'
-alias subl='open /Applications/Sublime\ Text\ 3.app'
-# alias gll='git log --pretty=format:'\''%Cgreen(%ci) %Cred%h%Creset %C(bold blue)<%an>%Creset %s -%C(yellow)%d%Creset'\''  --abbrev-commit --graph'
+# alias subl='open /Applications/Sublime\ Text\ 3.app'
+alias gll='git log --pretty=format:'\''%Cgreen(%ci) %Cred%h%Creset %C(bold blue)<%an>%Creset %s -%C(yellow)%d%Creset'\''  --abbrev-commit --graph'
 alias gl='git log --pretty=format:'\''%C(bold red)%h%C(reset) : %C(bold green)(%ar : %ci)%C(reset) - %C(cyan)<%an>%C(reset)%C(bold yellow)%d%C(reset)%n%n%w(90,1,2)%C(white)%B%C(reset)%n'\''  --abbrev-commit --graph'
 alias java_ls='/usr/libexec/java_home -V 2>&1 | grep -E "\d.\d.\d_\d\d" | cut -d , -f 1 | colrm 1 4 | grep -v Home'
+alias ad='adb devices'
+alias python='python3'
+alias pip='pip3'
 
 alias ..1='cd ..'
 alias ..2='cd ../..'
