@@ -117,15 +117,23 @@ alias ..4='cd ../../../..'
 alias ..5='cd ../../../../..'
 
 # git alias
+# git log
 alias gll='git log --pretty=format:'\''%Cgreen(%ci) %Cred%h%Creset %C(bold blue)<%an>%Creset %s -%C(yellow)%d%Creset'\''  --abbrev-commit --graph'
 alias gl='git log --pretty=format:'\''%C(bold red)%h%C(reset) : %C(bold green)(%ar : %ci)%C(reset) - %C(cyan)<%an>%C(reset)%C(bold yellow)%d%C(reset)%n%n%w(90,1,2)%C(white)%B%C(reset)%n'\''  --abbrev-commit --graph'
 alias gs='git status'
 alias gfu='git fetch upstream'
+# git diff
 alias gd='git diff'
 alias gds='git diff --staged'
 alias gaa='git add -A'
 alias gcm='git commit -m'
+alias gb='git branch'
+# git rebase
 alias grc='git rebase --continue'
+alias grs='git rebase --skip'
+alias gra='git rebase --abort'
+# git reset
+alias grh='git reset --hard'
 
 # go to nginx conf
 alias n_conf='cd /usr/local/etc/nginx'
