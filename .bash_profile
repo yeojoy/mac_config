@@ -142,7 +142,7 @@ export CLICOLOR=1
 export LSCOLORS=FxGxCxDxBxegedabagaced
 
 export JAVA_HOME=$(/usr/libexec/java_home)
-export ANDROID_HOME=${HOME}/Library/Android/sdk
+export ANDROID_HOME=${HOME}/sdk/android
 export NDK_HOME=/usr/local/Cellar/android-ndk/r10e
 export DRACULA_HOME=${HOME}/tmp/xcode
 
