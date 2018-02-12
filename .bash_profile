@@ -107,6 +107,7 @@ alias grep='grep --color=auto'
 # alias subl='open /Applications/Sublime\ Text\ 3.app'
 alias java_ls='/usr/libexec/java_home -V 2>&1 | grep -E "\d.\d.\d_\d\d" | cut -d , -f 1 | colrm 1 4 | grep -v Home'
 alias ad='adb devices'
+alias aks='adb kill-server && adb start-server && adb devices'
 alias python='python3'
 alias pip='pip3'
 
