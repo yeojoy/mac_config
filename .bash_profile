@@ -1,9 +1,6 @@
 ###### .bash_profile
 ###### @author  A.J <andrwj@gmail.com>
 
-###### about java_use > http://superuser.com/users/201460/alex
-###### refs : http://superuser.com/questions/490425/how-do-i-switch-between-java-7-and-java-6-on-os-x-10-8-2
-
 ###### display 'git status' in bash prompt line (PS1)
 c_cyan=`tput setaf 6`
 c_dark=`tput setaf 0`
@@ -24,7 +21,7 @@ parse_branch ()
       branchname="("$(branch_color)$(git branch 2>/dev/null| sed -n '/^\*/s/^\* //p')${c_sgr0}") "
    else
       return 0
-   fi
+   fi 
    echo -e $branchname
 }
 
@@ -40,23 +37,13 @@ branch_color ()
       esac
    else
      color=${c_red}
-   fi
+   fi 
    echo -ne $color
-}
-
-# HOW TO USE
-# change to java jdk6, 7, or 8
-# example
-# $ java_use 6
-function java_use() {
-    export JAVA_HOME=$(/usr/libexec/java_home -v 1.$1)
-    export PATH=$JAVA_HOME/bin:$PATH
-    java -version
 }
 
 export PS1='@\[\e[1;32m\]\u\[\e[0m\]\[${c_sgr0}\]:\w\[${c_sgr0}\]\[$(parse_branch)\]\[\e[0m\]> '
 
-###### General
+###### General 
 export EDITOR=/usr/bin/vim
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
@@ -71,7 +58,7 @@ if [[ -s "$HOME/.nvm/nvm.sh" ]]; then
 else
 #	export NODE_PATH=/usr/lib/node_modules/
   echo
-fi
+fi	
 
 ###### Perl Version Manager
 [[ -s  "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc"
@@ -98,25 +85,22 @@ fi
 set -o vi
 
 
-##########
+##########  
 # alias
-##########
+##########  
 # alias ls='ls -G'
 alias ll='ls -alt'
 alias grep='grep --color=auto'
-alias vcode='open /Applications/Visual\ Studio\ Code.app'
-alias java_ls='/usr/libexec/java_home -V 2>&1 | grep -E "\d.\d.\d_\d\d" | cut -d , -f 1 | colrm 1 4 | grep -v Home'
-alias ad='adb devices -l'
-alias aks='adb kill-server && adb start-server && adb devices -l'
+# alias subl='open /Applications/Sublime\ Text\ 3.app'
+alias ad='adb devices'
+alias python='python3'
+alias pip='pip3'
 
 alias ..1='cd ..'
 alias ..2='cd ../..'
 alias ..3='cd ../../..'
 alias ..4='cd ../../../..'
 alias ..5='cd ../../../../..'
-
-# to connect jenkins container in docker
-alias jenkins='bash -c "clear && DOCKER_HOST=tcp://192.168.99.100:2376 DOCKER_CERT_PATH=/Users/yeojoy/.docker/machine/machines/default DOCKER_TLS_VERIFY=1 docker exec -it jenkins bash"'
 
 # git alias
 # git log
@@ -127,9 +111,14 @@ alias gfu='git fetch upstream'
 # git diff
 alias gd='git diff'
 alias gds='git diff --staged'
+alias gdn='git diff --name-status'
+alias grpo='git remote prune origin'
 alias gaa='git add -A'
 alias gcm='git commit -m'
-alias gb='git branch'
+alias gb='git branch -a'
+# git remote
+alias grv='git remote -v'
+alias grsu='git remote set-url'
 # git rebase
 alias grc='git rebase --continue'
 alias grs='git rebase --skip'
@@ -140,22 +129,17 @@ alias grh='git reset --hard'
 # go to nginx conf
 alias n_conf='cd /usr/local/etc/nginx'
 
-# postgresql alias
-alias pg-start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
-alias pg-stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
-
 export CLICOLOR=1
 export LSCOLORS=FxGxCxDxBxegedabagaced
 
-export JAVA_HOME=$(/usr/libexec/java_home)
 export ANDROID_HOME=${HOME}/sdk/android
 export NDK_HOME=/usr/local/Cellar/android-ndk/r10e
 export DRACULA_HOME=${HOME}/tmp/xcode
+export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Home
+export GO_HOME=${HOME}/go/bin
 
 export PATH=${PATH}:/usr/local/bin:/usr/local/sbin:/usr/local/share/python
 export PATH=${PATH}:${HOME}/bin
+export PATH=${PATH}:${JAVA_HOME}/bin
 export PATH=${PATH}:$HOME/sh:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
-export PATH="/usr/local/opt/node@8/bin:$PATH"
-
-# set java version for android
-java_use 8
+export PATH=${PATH}:${GO_HOME}
