@@ -130,7 +130,7 @@ alias gdn='git --no-pager diff --name-status'
 alias grpo='git remote prune origin'
 alias gaa='git add -A'
 alias gcm='git commit -m'
-alias gb='git branch -a'
+alias gb='git --no-pager branch -a'
 # git remote
 alias grv='git remote -v'
 alias grsu='git remote set-url'

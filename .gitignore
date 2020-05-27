@@ -1,36 +1,5 @@
-###########
-# folders
-###########
-.Trash/
-.android/
-.dropbox/
-.gradle/
-.m2/
-.ssh/
-AndroidStudioProjects/
-Desktop/
-Documents/
-Downloads/
-Dropbox/
-Library/
-Movies/
-Music/
-Pictures/
-Public/
-Study/
-Utils/
-Virtual Machines.localized
-build/
-test/
-tmp/
-workspace/
-catoons/
+hconnect.keystore
+signing.sh
 
-###########
-# files
-###########
-.CFUserTextEncoding
 .DS_Store
-.bash_history
-.lesshst
 
