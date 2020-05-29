@@ -131,6 +131,8 @@ alias grpo='git remote prune origin'
 alias gaa='git add -A'
 alias gcm='git commit -m'
 alias gb='git --no-pager branch -a'
+alias gcd='git checkout develop'
+alias gmd='git merge develop'
 # git remote
 alias grv='git remote -v'
 alias grsu='git remote set-url'
